@@ -1,0 +1,17 @@
+{
+  "name": "dht11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dht-sensor": "0.0.4",
+    "express": "^4.16.2",
+    "node-schedule": "^1.2.5",
+    "rrdtool": "^0.1.0"
+  }
+}

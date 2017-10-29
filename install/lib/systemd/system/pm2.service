@@ -1,0 +1,14 @@
+[Unit]
+Description=PM2 NodeJS service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/lib/node_modules/pm2/bin/pm2 --no-daemon start /etc/pm2/pm2.json
+ExecReload=/usr/lib/node_modules/pm2/bin/pm2 reload all
+ExecStop=/usr/lib/node_modules/pm2/bin/pm2 kill
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
